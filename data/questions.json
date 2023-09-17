@@ -1,0 +1,154 @@
+{
+  "questions": [
+    {
+      "question": "Which of the following syntax correctly declares an Array?",
+      "options": [
+      "int geeks;", 
+      "array geeks[20];", 
+      "geeks{20};", 
+      "int geeks[20];"
+    ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "The size of the array should always be _____",
+      "options": ["Positive", "Negative", "Whole Number", "Real Number"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "What is the correct way to initialize values in an array?",
+      "options": [
+        "my_array [5] = (5,3,4,2,7);", 
+        "my_array [5] = {5;3;4;2;7};", 
+        "my_array [5] = {5,3,4,2,7,5,6,7,8};", 
+        "my_array [5] = {1,2,3,4,5}"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "In an array int arr[3]={1,2,3}, what will happen if we try to access arr[4] in C/C++?",
+      "options": [
+        "Run Time Error", 
+        "3", 
+        "0", 
+        "Garbage value"
+      ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Which of these operators can be used to concatenate two or more String objects?",
+      "options": [
+        "'+'",
+        "'+='",
+        "'&'",
+        "None of these"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which of these methods of class String is used to obtain the length of the String object?",
+      "options": [
+        "get()", 
+        "Sizeof()", 
+        "lengthof()", 
+        "length()"
+    ],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "In a circular linked list, the last node points to the____.",
+      "options": [
+        "this pointer",
+        "tall pointer",
+        "first node",
+        "middle node"
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "What advantage does a linked list have over an array?",
+      "options": [
+        "A linked list is not of a fixed size",
+        "It's Better",
+        "It's Easier to use",
+        "A linked list can give you the data faster"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "Nodes in a linked list contain two things:",
+      "options": [
+        "A pointer and a node",
+        "A Pointer and a reference",
+        "Direction and a pointer",
+        "Data and a pointer"
+      ],
+      "correctOption": 3,
+      "points": 20
+    },
+    {
+      "question": "The last node of the singly-linked list contains ___",
+      "options": [
+        "NULL",
+        "Next Pointer",
+        "Data",
+        "None of the above"
+      ],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "How many null pointers exist in a circular linked list?",
+      "options": ["0", "1", "2", "3"],
+      "correctOption": 0,
+      "points": 30
+    },
+    {
+      "question": "The process of inserting an element in the stack is called ____________",
+      "options": ["create", "Evaluate", "push", "pop"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "In a stack, if a user tries to remove an element from an empty stack it is called?",
+      "options": [
+        "Empty Collection",
+        "Garbage Collection",
+        "Overflow",
+        "Underflow"
+      ],
+      "correctOption": 3,
+      "points": 30
+    },
+    {
+      "question": "The list of data in which elements can be inserted and removed at the same end is called ____.",
+      "options": [
+        "Array",
+        "Queue",
+        "Stack",
+        "None"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Which data structure type allows deleting data elements from front and inserting at rear?",
+      "options": [
+        "Array",
+        "Queue",
+        "Stack",
+        "None"
+      ],
+      "correctOption": 1,
+      "points": 20
+    }
+  ]
+}
