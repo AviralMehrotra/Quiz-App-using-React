@@ -10,6 +10,7 @@ import Progress from "./Progress";
 import FinishScreen from "./FinishScreen";
 import Footer from "./Footer";
 import Timer from "./Timer";
+import { JSONBIN_ID, JSONBIN_API_KEY } from "../secret/Keys";
 
 const SEC_PER_QUES = 60;
 
@@ -88,10 +89,18 @@ export default function App() {
   const totalPoints = questions.reduce((prev, cur) => prev + cur.points, 0);
 
   useEffect(function () {
-    const apiUrl = "http://localhost:8000/questions";
-    fetch(apiUrl)
+    // const apiUrl = "http://localhost:8000/questions";
+    const apiUrl = `https://api.jsonbin.io/v3/b/${JSONBIN_ID}`;
+    fetch(apiUrl, {
+      headers: {
+        "Content-Type": "application/json",
+        "X-Master-Key": JSONBIN_API_KEY,
+      },
+    })
       .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataRecieved", payload: data }))
+      .then((data) =>
+        dispatch({ type: "dataRecieved", payload: data.record.questions })
+      )
       .catch((err) => dispatch({ type: "dataFailed" }));
   }, []);
 
