@@ -14,11 +14,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && npm run server",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch data/questions.json --port 8000",
-     "start:vercel": "npm start && npm run server"
+    "server": "json-server --watch data/questions.json --port 8000"
   },
   "eslintConfig": {
     "extends": [
